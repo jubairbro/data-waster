@@ -1,7 +1,0 @@
-{
-  "name": "Data Waster Terminal",
-  "description": "A matrix-style terminal application designed to waste internet data intentionally using high-speed streams.",
-  "requestFramePermissions": [
-    "geolocation"
-  ]
-}
