@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>SENSEI WASTER</title>
+    <meta name="description" content="Intentional Data Wasting Tool" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              terminal: {
+                black: '#050505',
+                green: '#00ff41',
+                dim: '#003b00',
+                alert: '#ff3333',
+                warn: '#fbbf24', // Yellow
+                cyan: '#22d3ee', // Cyan
+                // Light Mode Palette (Now DIM/GREY Mode ~60% Black)
+                light: {
+                    bg: '#262626',   // Neutral Dark Grey (Not White)
+                    text: '#e5e5e5', // Light Grey Text
+                    accent: '#4ade80', // Soft Green
+                    dim: '#525252',  // Mid Grey
+                    panel: '#404040' // Lighter Grey Panel
+                }
+              }
+            },
+            fontFamily: {
+              mono: ['"Courier New"', 'Courier', 'monospace']
+            },
+            animation: {
+              'blink': 'blink 1s step-end infinite',
+              'glitch': 'glitch 1s linear infinite',
+            },
+            keyframes: {
+              blink: {
+                '0%, 100%': { opacity: '1' },
+                '50%': { opacity: '0' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        overflow-x: hidden;
+        -webkit-tap-highlight-color: transparent;
+      }
+      /* Custom Scrollbar that adapts to theme via CSS var if needed, or defaults */
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #004400;
+        border-radius: 3px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #00ff41;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
